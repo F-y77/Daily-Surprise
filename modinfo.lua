@@ -1,7 +1,7 @@
 name = "每日惊喜"
 description = "每天给玩家一个随机的惊喜效果"
 author = "Va6gn"
-version = "1.1.0"
+version = "1.2.0"
 
 -- 游戏兼容性
 dst_compatible = true
@@ -16,6 +16,12 @@ all_clients_require_mod = true
 -- mod图标
 icon_atlas = "modicon.xml"
 icon = "modicon.tex"
+
+server_filter_tags = {
+    "va6gn",
+    "daily_surprise",
+    "每日惊喜",
+}
 
 -- mod配置选项
 configuration_options = {
@@ -68,14 +74,20 @@ configuration_options = {
             {description = "10%", data = 0.1},
             {description = "20%", data = 0.2},
             {description = "30%", data = 0.3},
-            {description = "50%", data = 0.5}
+            {description = "40%", data = 0.4},
+            {description = "50%", data = 0.5},
+            {description = "60%", data = 0.6},
+            {description = "70%", data = 0.7},
+            {description = "80%", data = 0.8},
+            {description = "90%", data = 0.9},
+            {description = "100%", data = 1}
         },
         default = 0.3
     },
     {
         name = "log_level",
         label = "日志级别",
-        hover = "控制服务器消息的显示级别",
+        hover = "控制服务器消息的显示级别",        
         options = {
             {description = "详细", data = 3},
             {description = "仅重要", data = 2}, 
